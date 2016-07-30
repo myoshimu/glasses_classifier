@@ -39,7 +39,7 @@ t<-table(test[,ncol(test)],P)   # for test
 # accuracy for train
 (u[1,1] + u[2,2]) / (u[1,1] + u[2,2] + u[1,2] + u[2,1])
 # accuracy for test
-a<-(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
+(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
 
 
 
@@ -60,7 +60,7 @@ t<-table(test[,ncol(test)],P)   # for test
 # accuracy for train
 (u[1,1] + u[2,2]) / (u[1,1] + u[2,2] + u[1,2] + u[2,1])
 # accuracy for test
-a<-(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
+(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
 
 
 
