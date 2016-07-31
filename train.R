@@ -22,9 +22,9 @@ P<-knn(train[,-ncol(train)],test[,-ncol(test)],train[,ncol(train)],k=5)
 u<-table(train[,ncol(train)],V) # for train
 t<-table(test[,ncol(test)],P)   # for test
 #accuracy for train
-b<-(u[1,1] + u[2,2]) / (u[1,1] + u[2,2] + u[1,2] + u[2,1])
+(u[1,1] + u[2,2]) / (u[1,1] + u[2,2] + u[1,2] + u[2,1])
 #accuracy for test
-a<-(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
+(t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
 
 
 
@@ -102,7 +102,7 @@ t<-table(test[,ncol(test)],P)   # for test
 # Nural Network
 library(nnet)
 
-M<-nnet(label~.,size=7,decay=0.3,data=train)
+M<-nnet(label~.,size=3,MaxNWts=84581,decay=0.3,data=train)
 P<-predict(M,test[,-ncol(test)],type="class")
 u<-table(train[,ncol(train)],V) # for train
 t<-table(test[,ncol(test)],P)   # for test
