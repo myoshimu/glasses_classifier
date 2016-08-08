@@ -119,7 +119,7 @@ h2o.init()
 train.hex <- as.h2o(train)
 test.hex <- as.h2o(test)
 
-M<-h2o.deeplearning(1:57,58,
+M<-h2o.deeplearning(1:1296,y=1297,
                     train.hex
                     ,activation="RectifierWithDropout",
                     epochs=100,
@@ -130,7 +130,7 @@ M<-h2o.deeplearning(1:57,58,
 )
 P<-h2o.predict(M,test.hex)
 
-t<-table(test[,58],as.vector(P$predict))
+t<-table(test[,1297],as.vector(P$predict))
 (t[1,1] + t[2,2]) / (t[1,1] + t[2,2] + t[1,2] + t[2,1])
 
 
