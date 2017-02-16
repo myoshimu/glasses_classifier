@@ -1,9 +1,9 @@
-# データ読み込み
+# Load vectors
 train <- read.csv("train.csv")
 test  <- read.csv("test.csv")
 
 
-#k-means法(精度が46%しかない、なぜ？)
+#k-means
 V=kmeans(train[,-ncol(train)],2)
 P=kmeans(test[,-ncol(test)],2)
 u<-table(train[,ncol(train)],V$cluster) # for train
