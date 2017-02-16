@@ -1,3 +1,4 @@
+#Convert picture file into vector
 library(biOps)
 
 kXBase = 48
