@@ -1,4 +1,6 @@
-# データ読み込み
+# For batch process purpose
+
+# Load vectors
 train <- read.csv("train.csv")
 test  <- read.csv("test.csv")
 
