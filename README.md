@@ -1,18 +1,18 @@
 # imgClassifier
 
-Rで画像判別
+Image classifier using R & biOps
 
- 1) 作業用フォルダを準備して、load.Rとtrain.Rを保存
+ 1) Save load.R & train.R into the work folder 
  
- 2) 1）のフォルダの下に以下4つのディレクトリを作成し画像（JPEG形式）を保存
- pika：正解教師データ
- no_pika：非正解教師データ
- sample_pika：正解テストデータ
- sample_no_pika：非正解ストデータ
+ 2) Create following directories and then save pictures
+ pika：Train data(correct)
+ no_pika：Train data(non-correct)
+ sample_pika：Holdout(correct)
+ sample_no_pika：Holdout(non-correct
  
- 3) Rでload.Rを実行し、画像をvectorに変換したtrain.csvとtest.csv作成
+ 3) Run load.R and then you can convert images into vector file(train.csv & test.csv)
  
- 4) train.Rで判別実施
+ 4) Run train.R to run classification
 
-biOpsインストールにつてはこちら
+biOps:
 https://code.google.com/archive/p/rimagebook/wikis/biOpsInstallation.wiki
