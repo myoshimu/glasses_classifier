@@ -1,3 +1,4 @@
+#Append GrayScale into vector
 library(biOps)
 
 kXBase = 48
